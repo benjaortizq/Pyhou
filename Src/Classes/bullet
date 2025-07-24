@@ -1,0 +1,7 @@
+class Bullet : 
+    def __init__(self, x,y,speed,angle, texture ) : 
+        self.x = x
+        self.y = y
+        self.speed = speed
+        self.angle = angle  
+        self.texture = texture 
