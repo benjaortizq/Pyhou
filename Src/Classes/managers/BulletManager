@@ -1,0 +1,14 @@
+import threading as th 
+
+class BulletManager(th.Thread):
+    def __init__(self):
+        super().__init__()
+        self.bullets = []
+
+    def run(self):
+        while True:
+            self.update_bullets()
+
+    def update_bullets(self):
+        for bullet in self.bullets:
+            bullet.update()
